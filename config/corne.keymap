@@ -57,8 +57,18 @@
                 };
 
                 extra_1 {
-                        status = "reserved";
+                        display-name = "Mod";
+                        bindings = <
+   &kp LSHFT  &trans       &trans       &trans       &trans       &trans         &trans   &trans   &trans &trans    &trans &trans
+   &kp LSHFT  &trans       &trans       &trans       &trans       &trans         &trans   &trans   &trans &trans    &trans &trans
+   &kp LSHFT  &trans       &trans       &trans       &trans       &trans         &trans   &trans   &trans &trans    &trans &trans
+                    	     &kp LGUI &trans   &kp SPACE   &kp RET   &trans    &kp RALT
+                        >;
                 };
+
+//                extra_1 {
+//                        status = "reserved";
+//                };
 
                 extra_2 {
                         status = "reserved";
