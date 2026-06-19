@@ -43,28 +43,14 @@
             key-positions = <30 31>;
         };
 
-        delete {
-            bindings = <&kp DELETE>;
-            key-positions = <10 11>;
-        };
-
         escape {
             bindings = <&kp ESCAPE>;
             key-positions = <0 1>;
         };
 
-        missionctrl {
-            bindings = <&msnctl>;
-            key-positions = <12 13>;
-        };
-    };
-
-    macros {
-        msnctl: msnctl {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LCTRL &kp UP_ARROW>;
-            label = "MSNCTL";
+        caps_word {
+            bindings = <&caps_word>;
+            key-positions = <17 18>;
         };
     };
 
@@ -80,10 +66,10 @@
 
             display-name = "Base";
             bindings = <
-&kp ESCAPE  &kp Q  &kp W  &kp E     &kp R  &kp T                   &kp Y      &kp U  &kp I      &kp O    &kp P     &kp BSPC
-&kp TAB     &kp A  &kp S  &kp D     &kp F  &kp G                   &kp H      &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LSHFT   &kp Z  &kp X  &kp C     &kp V  &kp B                   &kp N      &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp DELETE
-                          &kp LGUI  &mo 1  &mt LEFT_SHIFT ENTER    &kp SPACE  &mo 2  &kp RALT
+&kp TAB    &kp Q  &kp W  &kp E     &kp R  &kp T                   &kp Y      &kp U  &kp I      &kp O    &kp P     &kp BSPC
+&kp LCTRL  &kp A  &kp S  &kp D     &kp F  &kp G                   &kp H      &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
+&kp LSHFT  &kp Z  &kp X  &kp C     &kp V  &kp B                   &kp N      &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp DELETE
+                         &kp LGUI  &mo 1  &mt LEFT_SHIFT ENTER    &kp SPACE  &mo 2  &kp RALT
             >;
         };
 
@@ -97,8 +83,8 @@
             display-name = "Lower";
             bindings = <
 &trans     &kp N1  &kp N2  &kp N3    &kp N4  &kp N5    &kp N6    &kp N7    &kp N8    &kp N9     &kp N0  &kp BSPC
-&kp LCTRL  &none   &none   &none     &none   &none     &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  &trans  &kp PAGE_UP
-&trans     &none   &none   &none     &none   &none     &trans    &trans    &trans    &trans     &trans  &kp PAGE_DOWN
+&kp LCTRL  &none   &none   &none     &none   &none     &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  &none   &kp PAGE_UP
+&trans     &none   &none   &none     &none   &none     &none     &none     &none     &none      &none   &kp PAGE_DOWN
                            &kp LGUI  &trans  &trans    &trans    &mo 3     &kp RALT
             >;
         };
@@ -123,8 +109,8 @@
             display-name = "Mod";
             bindings = <
 &none       &kp F1        &kp F2        &kp F3        &kp F4        &kp F5          &kp F6   &kp F7             &kp F8           &kp F9      &kp F10  &trans
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans   &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp K_MUTE  &none    &trans
-&kp LSHFT   &out OUT_TOG  &out OUT_BLE  &out OUT_USB  &trans        &trans          &trans   &trans             &none            &none       &none    &trans
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &none    &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp K_MUTE  &none    &none
+&kp LSHFT   &out OUT_TOG  &out OUT_BLE  &out OUT_USB  &trans        &trans          &none    &none              &none            &none       &none    &none
                                         &kp LGUI      &trans        &kp SPACE       &kp RET  &trans             &kp RALT
             >;
         };
