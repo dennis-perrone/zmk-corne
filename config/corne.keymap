@@ -52,6 +52,32 @@
             bindings = <&caps_word>;
             key-positions = <17 18>;
         };
+
+        missionctl {
+            bindings = <&mission_ctl>;
+            key-positions = <37 30>;
+        };
+
+        screenshot {
+            bindings = <&screenshot>;
+            key-positions = <37 31>;
+        };
+    };
+
+    macros {
+        mission_ctl: mission_ctl {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LCTRL &kp UP>;
+            label = "MISSION_CTL";
+        };
+
+        screenshot: screenshot {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LSHFT &kp LGUI &kp N5>;
+            label = "SCREENSHOT";
+        };
     };
 
     keymap {
@@ -82,9 +108,9 @@
 
             display-name = "Lower";
             bindings = <
-&trans     &kp N1  &kp N2  &kp N3    &kp N4  &kp N5    &kp N6    &kp N7    &kp N8    &kp N9     &kp N0  &kp BSPC
-&kp LCTRL  &none   &none   &none     &none   &none     &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  &none   &kp PAGE_UP
-&trans     &none   &none   &none     &none   &none     &none     &none     &none     &none      &none   &kp PAGE_DOWN
+&trans     &kp N1  &kp N2  &kp N3    &kp N4  &kp N5    &kp N6    &kp N7    &kp N8    &kp N9     &kp N0             &kp BSPC
+&kp LCTRL  &none   &none   &none     &none   &none     &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  &kp C_AC_ZOOM_IN   &kp PAGE_UP
+&trans     &none   &none   &none     &none   &none     &none     &none     &none     &none      &kp C_AC_ZOOM_OUT  &kp PAGE_DOWN
                            &kp LGUI  &trans  &trans    &trans    &mo 3     &kp RALT
             >;
         };
