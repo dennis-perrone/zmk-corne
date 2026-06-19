@@ -55,12 +55,12 @@
 
         missionctl {
             bindings = <&mission_ctl>;
-            key-positions = <37 30>;
+            key-positions = <37 3>;
         };
 
         screenshot {
             bindings = <&screenshot>;
-            key-positions = <37 31>;
+            key-positions = <37 2>;
         };
     };
 
