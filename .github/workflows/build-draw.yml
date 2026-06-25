@@ -1,0 +1,54 @@
+name: Build ZMK Firmware and Draw Keymaps
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "config/*.keymap"
+      - "config/*.dtsi"
+      - "config/*.conf"
+      - "build.yaml"
+      - "keymap_drawer.config.yaml"
+      - "img/keymap-img/keymap_drawer.config.yaml"
+      - ".github/workflows/build.yml"
+  pull_request:
+
+jobs:
+  build:
+    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@v0.3
+
+  rename-artifact:
+    needs: build
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Create timestamp
+        run: echo "ts=$(date +'%Y%m%d%H%M')" >> "$GITHUB_ENV"
+
+      - name: Download firmware artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: firmware
+          path: firmware
+
+      - name: Re-upload with new name
+        uses: actions/upload-artifact@v4
+        with:
+          name: firmware-v2-${{ env.ts }}
+          path: firmware
+
+  draw:
+    uses: caksoylar/keymap-drawer/.github/workflows/draw-zmk.yml@main
+    permissions:
+      contents: write
+
+    with:
+      keymap_patterns: "config/*.keymap"
+      config_path: "img/corne/keymap_drawer.config.yaml"
+      output_folder: "img/corne"
+      json_path: "config"
+      parse_args: ""
+      draw_args: ""
+      amend_commit: true
+      fail_on_error: true
+      debug_mode: false

@@ -1,0 +1,234 @@
+layout: {zmk_keyboard: corne}
+layers:
+  base:
+  - TAB
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - BSPC
+  - LCTRL
+  - A
+  - S
+  - D
+  - F
+  - G
+  - H
+  - J
+  - K
+  - L
+  - ;
+  - ''''
+  - LSHFT
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - DELETE
+  - LGUI
+  - lower
+  - {t: ENTER, h: LEFT SHIFT}
+  - SPACE
+  - {t: BACKSPACE, h: raise}
+  - RALT
+  lower:
+  - {t: ▽, type: trans}
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
+  - DELETE
+  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - LEFT
+  - DOWN
+  - UP
+  - RIGHT
+  - Gui+=
+  - PAGE UP
+  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - ''
+  - ''
+  - num
+  - Sft+Gui+5
+  - Ctl+UP ARROW
+  - Ctl+DOWN
+  - ''
+  - Gui+-
+  - PAGE DOWN
+  - LGUI
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - sys
+  - RALT
+  raise:
+  - {t: ▽, type: trans}
+  - '!'
+  - '@'
+  - '#'
+  - $
+  - '%'
+  - ^
+  - '&'
+  - KP MULTIPLY
+  - (
+  - )
+  - BSPC
+  - LCTRL
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '-'
+  - '='
+  - '['
+  - ']'
+  - \
+  - '`'
+  - LSHFT
+  - ''
+  - INS
+  - HOME
+  - END
+  - ''
+  - _
+  - +
+  - '{'
+  - '}'
+  - '|'
+  - '~'
+  - LGUI
+  - sys
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - RALT
+  sys:
+  - ''
+  - F1
+  - F2
+  - F3
+  - F4
+  - F5
+  - F6
+  - F7
+  - F8
+  - F9
+  - F10
+  - ''
+  - BT CLR
+  - {t: BT, h: '0'}
+  - {t: BT, h: '1'}
+  - {t: BT, h: '2'}
+  - {t: BT, h: '3'}
+  - {t: BT, h: '4'}
+  - ''
+  - VOLUME DOWN
+  - VOLUME UP
+  - MUTE
+  - ''
+  - ''
+  - LSHFT
+  - OUT TOG
+  - OUT BLE
+  - OUT USB
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ''
+  - PREVIOUS
+  - PLAY PAUSE
+  - NEXT
+  - ''
+  - ''
+  - LGUI
+  - {type: held}
+  - SPACE
+  - RET
+  - {type: held}
+  - RALT
+  num:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '7'
+  - '8'
+  - '9'
+  - ''
+  - BACKSPACE
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '4'
+  - '5'
+  - '6'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {type: held}
+  - ''
+  - '1'
+  - '2'
+  - '3'
+  - ''
+  - ''
+  - ''
+  - {type: held}
+  - SPACE
+  - RET
+  - '0'
+  - ''
+combos:
+- p: [17, 16]
+  k: '['
+- p: [18, 19]
+  k: ']'
+- p: [4, 5]
+  k: (
+- p: [6, 7]
+  k: )
+- p: [28, 29]
+  k: '{'
+- p: [30, 31]
+  k: '}'
+- p: [0, 1]
+  k: ESCAPE
+- p: [17, 18]
+  k: '&caps_word'
