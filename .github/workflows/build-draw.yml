@@ -34,7 +34,7 @@ jobs:
       - name: Re-upload with new name
         uses: actions/upload-artifact@v4
         with:
-          name: firmware-v2-${{ env.ts }}
+          name: firmware-${{ env.ts }}
           path: firmware
 
   draw:
