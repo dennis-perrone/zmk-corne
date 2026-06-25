@@ -500,8 +500,8 @@ path.combo {
 </g>
 <g transform="translate(554, 213) rotate(-15.0)" class="key keypos-40">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<a href="#mod">
-<text x="0" y="0" class="key tap layer-activator">mod</text>
+<a href="#sys">
+<text x="0" y="0" class="key tap layer-activator">sys</text>
 </a></g>
 <g transform="translate(616, 205)" class="key keypos-41">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -691,8 +691,8 @@ path.combo {
 </g>
 <g transform="translate(286, 213) rotate(15.0)" class="key keypos-37">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<a href="#mod">
-<text x="0" y="0" class="key tap layer-activator">mod</text>
+<a href="#sys">
+<text x="0" y="0" class="key tap layer-activator">sys</text>
 </a></g>
 <g transform="translate(351, 224) rotate(30.0)" class="key trans keypos-38">
 <rect rx="6" ry="6" x="-26" y="-40" width="52" height="80" class="key trans"/>
@@ -745,8 +745,8 @@ path.combo {
 </g>
 </g>
 </g>
-<g transform="translate(30, 992)" class="layer-mod">
-<text x="0" y="28" class="label" id="mod">mod:</text>
+<g transform="translate(30, 992)" class="layer-sys">
+<text x="0" y="28" class="label" id="sys">sys:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 49)" class="key keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>

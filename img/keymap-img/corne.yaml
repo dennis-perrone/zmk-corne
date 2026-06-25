@@ -84,7 +84,7 @@ layers:
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - mod
+  - sys
   - RALT
   raise:
   - {t: ▽, type: trans}
@@ -124,12 +124,12 @@ layers:
   - '|'
   - '~'
   - LGUI
-  - mod
+  - sys
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
   - RALT
-  mod:
+  sys:
   - ''
   - F1
   - F2
