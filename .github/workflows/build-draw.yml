@@ -9,7 +9,7 @@ on:
       - "config/*.conf"
       - "build.yaml"
       - "keymap_drawer.config.yaml"
-      - "img/**"
+      - "img/keymap-img/keymap_drawer.config.yaml"
       - ".github/workflows/build.yml"
   pull_request:
 
@@ -44,7 +44,7 @@ jobs:
 
     with:
       keymap_patterns: "config/*.keymap"
-      config_path: "img/corne/corne.yaml"
+      # config_path: "img/corne/corne.yaml"
       output_folder: "img/corne"
       json_path: "config"
       parse_args: ""

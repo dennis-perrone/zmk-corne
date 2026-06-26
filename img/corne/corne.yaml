@@ -102,8 +102,8 @@ layers:
   - LCTRL
   - ''
   - ''
-  - ''
-  - ''
+  - Gui+C
+  - Gui+V
   - ''
   - '-'
   - '='
@@ -158,8 +158,8 @@ layers:
   - OUT TOG
   - OUT BLE
   - OUT USB
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ''
+  - ''
   - ''
   - PREVIOUS
   - PLAY PAUSE
