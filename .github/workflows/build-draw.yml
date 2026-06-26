@@ -9,7 +9,7 @@ on:
       - "config/*.conf"
       - "build.yaml"
       - "keymap_drawer.config.yaml"
-      - "img/keymap-img/keymap_drawer.config.yaml"
+      - "img/**"
       - ".github/workflows/build.yml"
   pull_request:
 
