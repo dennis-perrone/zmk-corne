@@ -14,16 +14,16 @@ layers:
   - P
   - BSPC
   - LCTRL
-  - {t: A, h: LGUI}
+  - {t: A, h: LCTRL}
   - {t: S, h: LALT}
-  - {t: D, h: LSHFT}
-  - {t: F, h: LCTRL}
+  - {t: D, h: LCMD}
+  - {t: F, h: LSHFT}
   - G
   - H
-  - {t: J, h: RCTRL}
-  - {t: K, h: RSHFT}
+  - {t: J, h: RSHFT}
+  - {t: K, h: RCMD}
   - {t: L, h: RALT}
-  - {t: ;, h: RGUI}
+  - {t: ;, h: RCTRL}
   - ''''
   - LSHFT
   - Z
@@ -99,7 +99,7 @@ layers:
   - (
   - )
   - BSPC
-  - LCTRL
+  - {t: ▽, type: trans}
   - ''
   - ''
   - Gui+C
@@ -111,7 +111,7 @@ layers:
   - ']'
   - \
   - '`'
-  - LSHFT
+  - {t: ▽, type: trans}
   - ''
   - INS
   - HOME
