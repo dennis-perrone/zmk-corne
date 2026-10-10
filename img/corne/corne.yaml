@@ -58,8 +58,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - Gui+LALT
-  - ''
-  - ''
+  - Sft+Gui+LEFT ARROW
+  - Sft+Gui+RIGHT
   - ''
   - ''
   - LEFT
@@ -70,8 +70,8 @@ layers:
   - PAGE UP
   - {t: ▽, type: trans}
   - ''
-  - ''
-  - ''
+  - Gui+LEFT ARROW
+  - Gui+RIGHT
   - ''
   - num
   - Sft+Gui+5
@@ -100,8 +100,8 @@ layers:
   - )
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - ''
-  - ''
+  - Ctl+LEFT ARROW
+  - Ctl+RIGHT
   - Gui+C
   - Gui+V
   - ''
