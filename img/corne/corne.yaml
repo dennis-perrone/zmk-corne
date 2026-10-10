@@ -57,7 +57,7 @@ layers:
   - '0'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Gui+LCTRL
+  - Gui+LALT
   - ''
   - ''
   - ''
